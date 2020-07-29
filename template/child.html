@@ -1,0 +1,12 @@
+{% extends "myapp/base.html" %}
+
+{% block title %}
+  <title>Child HTML files</title>
+{% endblock  %}
+
+{% block content  %}
+  
+    <h2>Welcome to child.html</h2>
+  <a href="{% url 'myapp:home' %}">Home</a>
+  <a href="{% url 'sample' %}">Sample</a>
+{% endblock  %}
